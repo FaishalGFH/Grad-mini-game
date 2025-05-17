@@ -32,8 +32,8 @@ def make_recursive(start, b, c):
 if "patterns" not in st.session_state or st.session_state.new_question:
     suku_pertama = random.randint(1, 20)
     a = random.randint(3, 5)
-    b = random.randint(2, 3)
-    c = random.randint(1, 3)
+    b = 2
+    c = random.randint(1, 5)
 
     st.session_state.patterns = [
         (f"prev*{b}+{c}", make_recursive(suku_pertama, b, c),
